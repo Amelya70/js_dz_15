@@ -1,0 +1,105 @@
+html{
+    font-size: 10px;
+}
+.review-app{
+    background: rgb(200, 188, 135);
+    height: 100vh;
+}.review-app__form{
+    width: 90%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.review-app__name{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 5rem;
+}
+
+.review-app_choose-movie{
+   width: 40%;
+}
+.review-app__title{
+    font-size: 2rem;
+}
+.review-app__input{
+   width: 100%;
+    height: 3rem;
+}
+.review-app__label{
+    padding-top: 1rem;
+}
+.review-app__title{
+    font-size: 2rem;
+}
+.review-app__about{
+    display: flex;
+    gap: 5rem;
+}
+.review-app__select{
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.5rem;
+}
+.review-app__review{
+    width: 40%;
+}
+.review-app__review-input{
+    width: 100%;
+    height: 20rem;
+}
+.review-app__button{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: lightblue;
+    border: 0.5px solid rgb(44, 181, 227);
+}
+
+.alert{
+    width: 80%;
+    max-width: 40rem;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+   padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    opacity: 0.7;
+}
+.alert__error{
+    background: rgb(226, 113, 113);
+    color: red;
+}
+.alert__success{
+    background: rgb(132, 191, 132);
+    color: green;
+}
+.table{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+thead{
+    background:rgb(92, 80, 29);
+}
+.movie:nth-child(odd){
+    background:rgb(160, 151, 109);
+}
+
+
+@media screen and (max-width:700px){
+    .review-app_choose-movie{
+        width: 100%;
+    }
+    .review-app__about{
+        display: block;
+    }
+    .review-app__review{
+        width: 100%;
+    }
+    .review-app__rating{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}

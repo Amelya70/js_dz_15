@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FE 126</title>
-  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./scss/main.scss">
+  <title>App oop</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
 </head>
+
 <body>
+
+  <main class="review-app">
+    <h1 class="review-app__name">Рецензия к фильму</h1>
+    <form class="review-app__form">
+
+
+      <div class="review-app_choose-movie">
+
+        <p class="review-app__title">Choose movie</p>
+        <input class="review-app__input" placeholder="Name films">
+        <label class="review-app__label">
+          <input class="review-app__checkbox" type="checkbox" id="checkbox">
+          <span class="review-app__checkbox-text">Add to favorite movies</span>
+        </label>
+
+      </div>
+
+      <div class=" review-app__about">
+
+        <div class="review-app__review">
+          <p class="review-app__title">Message</p>
+          <textarea class="review-app__review-input" placeholder="About film …" id="textarea"></textarea>
+        </div>
+
+        <div class="review-app__rating">
+
+          <p class="review-app__title">Select rating</p>
+          <select class="review-app__select" id="select">
+            <option value="Option 1">1</option>
+            <option value="Option 2">2</option>
+            <option value="Option 3">3</option>
+            <option value="Option 4">4</option>
+            <option value="Option 5">5</option>
+          </select>
+
+        </div>
+      </div>
+
+      <button class="review-app__button " id="button">Send review</button>
+
+    </form>
+
+    <div class="alert alert__error">
+    
+        Fill in the title of the movie
+      
+    </div>
+    <div class="alert alert__success">
+      
+        Your movie has been added to the library
+
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name movie </th>
+          <th>review</th>
+          <th>rating</th>
+          <th>Favorite</th>
+          <th>change</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="movie">
+          <th>Avatar </th>
+          <th>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eius quae. Maiores nobis officiis, assumenda non suscipit aut incidunt veritatis error accusamus, quo numquam quos delectus. Labore cum enim ipsum.</th>
+          <th>5</th>
+          <th>*</th>
+          <th>
+            <button>
+              delite
+            </button>
+            <button>
+              change
+            </button>
+          </th>
+        </tr>
+        <tr class="movie">
+          <th>Avatar </th>
+          <th>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eius quae. Maiores nobis officiis, assumenda non suscipit aut incidunt veritatis error accusamus, quo numquam quos delectus. Labore cum enim ipsum.</th>
+          <th>5</th>
+          <th>*</th>
+          <th>
+            <button>
+              delite
+            </button>
+            <button>
+              change
+            </button>
+          </th>
+        </tr>
+        <tr class="movie">
+          <th>Avatar </th>
+          <th>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eius quae. Maiores nobis officiis, assumenda non suscipit aut incidunt veritatis error accusamus, quo numquam quos delectus. Labore cum enim ipsum.</th>
+          <th>5</th>
+          <th>*</th>
+          <th>
+            <button>
+              delite
+            </button>
+            <button>
+              change
+            </button>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+
   <script type="module" src="./js/app.js"></script>
 </body>
+
 </html>
